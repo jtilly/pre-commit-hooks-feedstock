@@ -56,7 +56,7 @@ requirements:
   run:
     - python >=3.6
     - ruamel.yaml >=0.15
-    - toml
+    - tomli >=1.1.0
 
 test:
   imports:

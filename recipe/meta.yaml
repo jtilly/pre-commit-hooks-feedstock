@@ -1,5 +1,5 @@
 {% set name = "pre-commit-hooks" %}
-{% set version = "4.2.0" %}
+{% set version = "4.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pre_commit_hooks-{{ version }}.tar.gz
-  sha256: 9726420c7a071e8cb233a066d36bc074b593a40f0b1b491d1b75aafa55390703
+  sha256: fda598a4c834d030727e6a615722718b47510f4bed72df4c949f95ba9f5aaf88
 
 build:
   number: 0
@@ -56,7 +56,7 @@ requirements:
   run:
     - python >=3.6
     - ruamel.yaml >=0.15
-    - toml
+    - tomli >=1.1.0
 
 test:
   imports:
@@ -107,3 +107,4 @@ about:
 extra:
   recipe-maintainers:
     - dangercrow
+    - jtilly

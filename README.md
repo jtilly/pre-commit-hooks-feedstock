@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@dangercrow](https://github.com/dangercrow/)
+* [@jtilly](https://github.com/jtilly/)
 

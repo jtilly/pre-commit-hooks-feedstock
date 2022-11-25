@@ -11,7 +11,7 @@ source:
   sha256: 7011eed8e1a25cde94693da009cba76392194cecc2f3f06c51a44ea6ad6c2af9
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - check-added-large-files = pre_commit_hooks.check_added_large_files:main
@@ -39,6 +39,7 @@ build:
     - fix-byte-order-marker = pre_commit_hooks.fix_byte_order_marker:main
     - fix-encoding-pragma = pre_commit_hooks.fix_encoding_pragma:main
     - forbid-new-submodules = pre_commit_hooks.forbid_new_submodules:main
+    - forbid-submodules = pre_commit_hooks.forbid_submodules:main
     - mixed-line-ending = pre_commit_hooks.mixed_line_ending:main
     - name-tests-test = pre_commit_hooks.tests_should_end_in_test:main
     - no-commit-to-branch = pre_commit_hooks.no_commit_to_branch:main
@@ -88,6 +89,7 @@ test:
     - fix-byte-order-marker --help
     - fix-encoding-pragma --help
     - forbid-new-submodules --help
+    - forbid-submodules --help
     - mixed-line-ending --help
     - name-tests-test --help
     - no-commit-to-branch --help
